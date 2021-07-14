@@ -1,0 +1,105 @@
+/*Abaixo vamos declarar variáveis que poderão
+ser reutilizadas no css*/
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+/*Reset os componentes*/
+*{
+
+    margin: 0;
+    padding: 0;
+    /* define o limete no box, ou seja os elementos vão se
+    adptar dentro do box*/
+    box-sizing: border-box; 
+}
+
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color:white;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family:'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;    
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+.container{
+ display: flex;
+ flex-direction: row;    
+ align-items: center;
+ justify-content: space-between;
+ margin-left: 20PX;
+}
+
+.containerMain{
+    margin-left: 20PX;
+    width: 50%;
+}
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../img/PenseComoCao.jpg");
+    height:510px;
+    background-size: cover;
+    display: flex; /*Joga os elementos em linha*/
+    flex-direction: column; /*Muda a direção dos elemento */
+    justify-content: center; /*Vai ficar centralizado dentro do item*/
+    align-items: flex-start; /*Indica que os elementos começem pela esquerda */
+}
+
+.filme-principal .descricao{
+    margin-bottom: 90px;
+    margin-top:40px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS',  Arial, sans-serif;
+}
+
+.botao{
+  background-color: rgba(0, 0, 0, .50) ;  
+  border: none;
+  color: white;
+
+  padding: 15px 30px; /* 15 - espaço para cima e para baixo, 30 espaço para direita e esquerda*/
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+.botao i{
+    margin-right: 5px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+}
